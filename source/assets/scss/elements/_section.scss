@@ -1,0 +1,17 @@
+.section--gray{
+  background: #f8f8f8;
+}
+
+.section--top-padded{
+  padding: 70px 0 0 0;
+}
+
+.section--padded{
+  padding: 90px 0;
+}
+
+.section--contact{
+  @extend .section--padded;
+  background: white url('/assets/images/contact-bg.png') top center no-repeat;
+  background-size: cover;
+}

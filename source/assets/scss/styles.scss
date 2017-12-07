@@ -1,0 +1,39 @@
+//  ==========================================================================
+//  Global style import Master File
+//  ==========================================================================
+    @import 'mixins/*.scss';
+    @import 'base/variables';
+    @import 'base/settings';
+    @import 'base/fonts';
+    @import 'base/print';
+
+    @import 'foundation';
+    @include foundation-global-styles;
+    //@include foundation-grid;
+    @include foundation-flex-classes;
+    @include foundation-flex-grid;
+    // @include foundation-xy-grid-classes(
+    //   $base-grid: true,
+    //   $margin-grid: true,
+    //   $padding-grid: true,
+    //   $block-grid: true,
+    //   $collapse: true,
+    //   $offset: true,
+    //   $vertical-grid: true
+    // );
+    @include foundation-typography;
+    @include foundation-visibility-classes;
+
+//  ==========================================================================
+//  Vendor, from Bower and Vendor
+//  ==========================================================================
+
+//  ==========================================================================
+//  Elements - such as heading, buttons, nav, footer
+//  ==========================================================================
+
+    @import 'elements/*.scss';
+    @import 'vendor/**/*.scss';
+    @import 'modules/*.scss';
+    @import 'pages/*.scss';
+    @import 'utilities/*.scss';

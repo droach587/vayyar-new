@@ -1,0 +1,23 @@
+
+
+@include font-face("FontAwesome", '../fonts/FontAwesome/fontawesome-webfont', null, null, eot ttf woff);
+
+
+.open-sans-light{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.open-sans-regular{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.open-sans-bold{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.roboto{
+  font-family: 'Roboto', sans-serif;
+}
