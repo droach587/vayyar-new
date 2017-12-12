@@ -1,0 +1,13 @@
+.btn{
+  display: inline-block;;
+  &--square{
+    padding: 10px 20px;
+    background: #2abaf1;
+    @extend .open-sans-bold;
+    color: white;
+    &:hover{
+      background: darken(#2abaf1, 20%);
+      color: white;
+    }
+  }
+}

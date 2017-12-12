@@ -48,6 +48,11 @@ button{
   border: none;
   font-family: 'Open Sans', sans-serif;
   &:hover{ background: darken(#00aeef, 10%); }
+  &.mobile-full{
+    @include breakpoint(medium down){
+      width: 100%;
+    }
+  }
 }
 
 input, textarea, select, button{

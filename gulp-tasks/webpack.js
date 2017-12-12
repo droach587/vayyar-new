@@ -61,9 +61,7 @@ gulp.task('webpack', () => {
         resolve: {
           alias: {
             jquery: path.resolve('node_modules', 'jquery/dist/jquery.js'),
-            'slick': path.resolve('node_modules', 'slick-carousel/slick/slick.min.js'),
-            'foundation': path.resolve('node_modules', 'foundation-sites/dist/js/foundation.js'),
-            'sticky': path.resolve('node_modules', 'jquery-sticky/jquery.sticky.js')
+            'cookie' : path.resolve('node_modules', 'jquery.cookie/jquery.cookie.js')
           }
         }
       }, webpack)

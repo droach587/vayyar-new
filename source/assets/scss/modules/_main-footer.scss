@@ -1,6 +1,11 @@
 .main-footer{
   background: #262626;
-  padding: 100px 0;
+  @include breakpoint(small up){
+    padding: 40px 0;
+  }
+  @include breakpoint(medium up){
+    padding: 100px 0;
+  }
 }
 
 .footer__ul{
@@ -10,8 +15,11 @@
     display: inline-block;
     width: 100%;
     color: #8c8c8c;
+    &.footer__logo{
+      margin-bottom: 25px;
+    }
   }
-  li:first-child{
+  li:first-child:not(.footer__logo){
     color: #cccccc;
     font-weight: 800;
     padding: 25px 0;

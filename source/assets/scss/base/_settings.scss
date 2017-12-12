@@ -37,15 +37,14 @@ $print-transparent-backgrounds: true;
 // --------------
 
 $breakpoints: (
-  xsmall: 0,
-  small: 480,
+  small: 0,
   medium: 640px,
   large: 860px,
   xlarge: 1024px,
   xxlarge: 1400px,
 );
 $print-breakpoint: large;
-$breakpoint-classes: (xsmall small medium large xlarge xxlarge);
+$breakpoint-classes: (small medium large xlarge xxlarge);
 
 // 3. The Grid
 // -----------
@@ -53,7 +52,7 @@ $breakpoint-classes: (xsmall small medium large xlarge xxlarge);
 $grid-row-width: $global-width;
 $grid-column-count: 12;
 $grid-column-gutter: (
-  xsmall: 20px,
+  small: 20px,
   medium: 30px,
 );
 $grid-column-align-edge: true;

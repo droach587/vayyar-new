@@ -1,3 +1,11 @@
 .main-logo__wrapper{
-  width: 200px;
+  width: 120px;
+  @include breakpoint(medium up){
+    width: 200px;
+  }
+  &--white{
+    .st0{fill:#FFFFFF;}
+  	.st1{fill:#FFFFFF;}
+    .stt4{ fill: #00aeef !important;}
+  }
 }

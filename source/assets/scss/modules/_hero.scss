@@ -1,0 +1,69 @@
+.main-hero{
+  background: white;
+  margin-top: 85px;
+  padding-bottom: 2rem;
+  @include breakpoint(medium up){
+    background: white url('/assets/images/vayyar-chip-hero.jpg') right center no-repeat;
+    padding-bottom: 0;
+  }
+  background-size: cover;
+  > .row{
+    box-sizing: border-box;
+    @include breakpoint(medium up){
+      min-height: 580px;
+      padding-top: 4rem;
+    }
+  }
+}
+
+.page-hero{
+  min-height: 450px;
+  background-size: cover;
+  background-position: top center;
+  margin-top: 85px;
+  &--automotive{
+    background-image: url('/assets/images/automotive-head.jpg');
+  }
+  &--robotics{
+    background-image: url('/assets/images/robotic-retail-head.jpg');
+  }
+  &--smart-home{
+    background-image: url('/assets/images/smart-home-head.jpg');
+  }
+  &--about{
+    background-image: url('/assets/images/about-head.jpg');
+  }
+  &--tech{
+    background-image: url('/assets/images/tech-head.jpg');
+  }
+  h1{
+    color: white;
+    text-shadow: 0px 2px 6px #222;
+  }
+}
+
+.hero__text-group{
+  h3{
+    color: #8e8e8e;
+    margin: 0;
+    line-height: 1.5;
+  }
+  h3 + h1{ margin-top: .6rem; }
+  h1{
+    margin: 0 0 0 0;
+    line-height: 1;
+  }
+  h1 + h3{ margin-top: 1.8rem; }
+}
+
+.hero__creds{
+  padding: 3rem 0;
+  background: #f8f8f8;
+  .lead{
+    color: #8e8e8e;
+  }
+  img{ opacity: .25;}
+  &--color{
+    img{ opacity: 1; }
+  }
+}

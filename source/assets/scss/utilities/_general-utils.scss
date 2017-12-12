@@ -6,3 +6,12 @@
   display: none !important;
   visibility: hidden;
 }
+
+.xl{
+  font-size: 5.75rem;
+}
+
+.i-xl{
+  font-size: 2.5rem;
+  @extend .fc--mg;
+}

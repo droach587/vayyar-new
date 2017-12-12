@@ -1,26 +1,27 @@
 .feature-quadrant{
-  h2{
-    padding-bottom: 2rem;
-  }
+  h2{ padding-bottom: 2rem; }
 }
 
 .feature-quadrant{
   .columns{
-    min-height: 454px;
-    padding: 0 .25rem 0 .25rem;
+    height: 200px;
+    padding: .2rem 0;
+    @include breakpoint(medium up){
+      height: 454px;
+      padding: 0 .25rem 0 .25rem;
+    }
   }
-  .row + .row{
-    margin-top: .5rem;
+
+  @include breakpoint(medium up){
+    .row + .row{ margin-top: .5rem;}
   }
-  .columns:nth-child(2){
-    padding-right: 0;
-  }
-  .columns:nth-child(1){
-    padding-left: 0;
-  }
-  .columns.only{
-    padding-right: 0;
-  }
+
+  .columns:nth-child(2){ padding-right: 0;}
+
+  .columns:nth-child(1){ padding-left: 0;}
+
+  .columns.only{ padding-right: 0; }
+
   .quadrant__inner{
     display: flex;
     flex-direction: row;
@@ -32,18 +33,16 @@
     overflow: hidden;
     h2, h3 { color: white;}
     h2 { margin: 0;}
-    h3 + h2 {
-      margin-top: .3rem;
-    }
+    h3 + h2 { margin-top: .3rem; }
     h2, h3{
       position: relative;
       z-index: 2;
       transition-duration: 10s;
       transition-property: all;
     }
-    h3{
-      transition-duration: 6s;
-    }
+
+    h3{ transition-duration: 6s; }
+
     &::after, &::before{
       position: absolute;
       top:0;
@@ -52,18 +51,15 @@
       height: 100%;
       content: '';
     }
+
     &::after{ z-index: 1;}
+
     &::before { z-index: 0; background-size: cover; background-position: center center; transition-duration: 20s; transition-timing-function: linear; transition-property: all;}
+
     &:hover{
-      h2{
-        transform: translateY(-50px);
-      }
-      h3{
-        opacity: 0;
-      }
-      &::before{
-        transform: scale3d(2, 2, 2);
-      }
+      h2{ transform: translateY(-50px); }
+      h3{ opacity: 0; }
+      &::before{ transform: scale3d(2, 2, 2); }
     }
   }
 }

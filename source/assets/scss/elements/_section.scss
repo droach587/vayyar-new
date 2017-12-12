@@ -1,17 +1,43 @@
-.section--gray{
-  background: #f8f8f8;
-}
-
 .section--top-padded{
   padding: 70px 0 0 0;
 }
 
 .section--padded{
-  padding: 90px 0;
+  padding: 2rem 0;
+  @include breakpoint(medium up){
+    padding: 90px 0;
+  }
+}
+
+.section{
+  background: white;
+  padding: 2rem 0;
+  @include breakpoint(medium up){
+    padding: 90px 0;
+  }
+  &--trans{
+    background-color: transparent;
+  }
+  &--angle{
+    background: url('/assets/images/section-angle.jpg') center 400px no-repeat;
+    background-size: 100% auto;
+  }
+  &--angle-purple{
+    background: url('/assets/images/section-angle-purple.jpg') center top no-repeat;
+    background-size: 100% auto;
+  }
+}
+
+.section--gray{
+  background: #f8f8f8;
+}
+
+.section--padded-med{
+  padding: 2rem 0;
 }
 
 .section--contact{
   @extend .section--padded;
-  background: white url('/assets/images/contact-bg.png') top center no-repeat;
+  background: white url('/assets/images/contact-bg.svg') top center no-repeat;
   background-size: cover;
 }

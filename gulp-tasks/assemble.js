@@ -16,7 +16,7 @@ app.task('views', function() {
   app.partials('source/views/partials/*.hbs');
   app.layouts('source/views/layouts/*.hbs');
   app.option('layout', 'layout.hbs');
-  app.pages('source/views/pages/*.hbs');
+  app.pages('source/views/pages/**/*.hbs');
 
   return app.toStream('pages')
     .pipe(app.renderFile())

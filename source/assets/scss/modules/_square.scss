@@ -1,0 +1,24 @@
+.square{
+  background: #f8f8f8;
+  padding: 3rem;
+  margin: 0 .5rem;
+  min-height: 225px;
+  &--link{
+    color: #262626;
+    transition-duration: .5s;
+    transition-property: all;
+    h3{
+      transition-property: all;
+      transition-duration: .1s;
+    }
+    &:hover{
+      background: lighten(#2abaf1,30%);
+      h3{ transform: translateY(-20px); }
+    }
+  }
+  &__inner{
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+  }
+}

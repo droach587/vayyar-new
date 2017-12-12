@@ -1,102 +1,71 @@
 ---
 title: Vayyar
-heading: 'Rokkan Assemble!'
+home: true
+description: Vayyar develops safe, mobile, low cost 3D imaging sensors, enabling applications ranging from breast cancer screening to detecting water leakage, food safety monitoring and many more.
 ---
 
-<header class="main-header">
-  <nav class="row expanded align-middle align-justify">
-    <div class="main-logo">
-      <div class="main-logo__wrapper">
-        {{>logo}}
-      </div>
-    </div>
-    <ul class="main-nav">
-      <li>
-        <a href="">Divisions <i class="fa fa-caret-down"></i></a>
-        <ul>
-          <li>
-            <a href="#">Automotive Labs</a>
-          </li>
-          <li>
-            <a href="#">Robotics</a>
-          </li>
-          <li>
-            <a href="#">Retail</a>
-          </li>
-          <li>
-            <a href="#">Smart Home</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Tech</a>
-      </li>
-      <li>
-        <a href="#">Press</a>
-      </li>
-      <li>
-        <a href="#">Contact</a>
-      </li>
-    </ul>
-  </nav>
-</header>
+{{>main-header}}
 
 <div class="main-hero">
   <div class="main-hero__row row align-middle">
     <div class="hero__text-group columns large-6">
-      <h3 class="open-sans-light">Meet Vayyar</h3>
-      <h1 class="open-sans-light">A new kind of imaging device</h1>
+      <img src="/assets/images/vayyar-chip-mobile.jpg" class="hide-for-medium"/>
+      <h1 class="open-sans-light">Meet a new kind of imaging device</h1>
       <h3 class="open-sans-light">Track everything around you in real time, without a camera.</h3>
-    </div>
-    <div class="hero__creds columns large-12">
-      <p class="lead open-sans-light">
-        As seen on...
-      </p>
-      <div class="row">
-        <div class="columns text-center"><img src="/assets/images/tech-crunch.jpg" alt=""/></div>
-        <div class="columns text-center"><img src="/assets/images/entrepreneur.jpg" alt=""/></div>
-        <div class="columns text-center"><img src="/assets/images/forbes.jpg" alt=""/></div>
-        <div class="columns text-center"><img src="/assets/images/fast-co.jpg" alt=""/></div>
-        <div class="columns text-center"><img src="/assets/images/cnbc.jpg" alt=""/></div>
-        <div class="columns text-center"><img src="/assets/images/computerworld.jpg" alt=""/></div>
-      </div>
     </div>
   </div>
 </div>
 
-<div class="section--gray section--top-padded feature-quadrant">
+<div class="row expanded">
+  <div class="hero__creds columns large-12">
+    <div class="row">
+      <p class="small-12 lead open-sans-light text-center medium-text-left">
+        As seen on...
+      </p>
+    </div>
+    <div class="row">
+      <div class="columns small-12 medium-2 push--small-20 text-center"><img src="/assets/images/tech-crunch.jpg" alt=""/></div>
+      <div class="columns small-12 medium-2 push--small-20 text-center"><img src="/assets/images/entrepreneur.jpg" alt=""/></div>
+      <div class="columns small-12 medium-2 push--small-20 text-center"><img src="/assets/images/forbes.jpg" alt=""/></div>
+      <div class="columns small-12 medium-2 push--small-20 text-center"><img src="/assets/images/fast-co.jpg" alt=""/></div>
+      <div class="columns small-12 medium-2 push--small-20 text-center"><img src="/assets/images/cnbc.jpg" alt=""/></div>
+      <div class="columns small-12 medium-2 push--small-20 text-center"><img src="/assets/images/computerworld.jpg" alt=""/></div>
+    </div>
+  </div>
+</div>
+
+<div class="section section--top-padded feature-quadrant">
   <div class="row align-center">
     <h2 class="open-sans-light">Vayyar Divisions</h2>
   </div>
-  <div class="row expanded">
-    <div class="columns small-6">
-      <a class="quadrant__inner red--grad quadrant--automotive">
-        <h2 class="open-sans-light">Automotive Labs</h2>
+  <div class="row">
+    <div class="columns small-12 medium-6">
+      <a href="/smart-home" class="quadrant__inner purple--grad quadrant--smart-home">
+        <h2 class="open-sans-light">Smart Home &amp; Office</h2>
       </a>
     </div>
-    <div class="columns small-6">
-      <a class="quadrant__inner blue--grad quadrant--robotics">
-        <h2 class="open-sans-light">Robotics</h2>
-      </a>
-    </div>
-  </div>
-  <div class="row expanded">
-    <div class="columns small-6">
-      <a class="quadrant__inner green--grad quadrant--retail">
-        <h2 class="open-sans-light">Retail</h2>
-      </a>
-    </div>
-    <div class="columns small-6">
-      <a class="quadrant__inner purple--grad quadrant--smart-home">
-        <h2 class="open-sans-light">Smart Home</h2>
+    <div class="columns small-12 medium-6">
+      <a href="/automotive" class="quadrant__inner red--grad quadrant--automotive">
+        <h2 class="open-sans-light">Automotive</h2>
       </a>
     </div>
   </div>
-  <div class="row expanded">
+  <div class="row">
+    <div class="columns small-12 medium-6">
+      <a href="/retail-robotics-medical" class="quadrant__inner green--grad quadrant--retail">
+        <h2 class="open-sans-light">Retail &amp; Smart Shelves</h2>
+      </a>
+    </div>
+    <div class="columns small-12 medium-6">
+      <a href="/retail-robotics-medical" class="quadrant__inner blue--grad quadrant--robotics">
+        <h2 class="open-sans-light">Robotics &amp; Medical</h2>
+      </a>
+    </div>
+  </div>
+  <div class="row">
     <div class="columns only small-12">
-      <a class="quadrant__inner yellow--grad quadrant--chip">
+      <a href="/technology" class="quadrant__inner yellow--grad quadrant--chip">
         <div>
-          <h3 class="open-sans-light">See what Vayyar can do</h3>
           <h2 class="open-sans-light">Technology</h2>
         </div>
       </a>
@@ -106,114 +75,29 @@ heading: 'Rokkan Assemble!'
 
 <div class="section--padded">
   <div class="row align-left">
-    <h2 class="open-sans-light">Investors</h2>
+    <div class="columns text-center medium-text-left">
+      <h2 class="open-sans-light">Investors</h2>
+    </div>
   </div>
   <div class="row align-justify push--40">
-    <div class="columns">
-      <img src="/assets/images/bv.jpg" />
+    <div class="columns small-12 medium-expand text-center push--small-20">
+      <a href="https://www.battery.com/" target="_blank"><img src="/assets/images/bv.jpg" /></a>
     </div>
-    <div class="columns">
-      <img src="/assets/images/bessemer.jpg" />
+    <div class="columns small-12 medium-expand text-center push--small-20">
+      <a href="https://www.bvp.com/" target="_blank"><img src="/assets/images/bessemer.jpg" /></a>
     </div>
-    <div class="columns">
-      <img src="/assets/images/icv.jpg" />
+    <div class="columns small-12 medium-expand text-center push--small-20">
+      <a href="http://www.icv.vc/" target="_blank"><img src="/assets/images/icv.jpg" /></a>
     </div>
-    <div class="columns">
-      <img src="/assets/images/wrv.jpg" />
+    <div class="columns small-12 medium-expand text-center push--small-20">
+      <a href="http://www.waldenintl.com/index.aspx" target="_blank"><img src="/assets/images/wrv.jpg" /></a>
     </div>
-    <div class="columns">
-      <img src="/assets/images/amiti.jpg" />
+    <div class="columns small-12 medium-expand text-center push--small-20">
+      <a href="http://www.amiticapital.com/" target="_blank"><img src="/assets/images/amiti.jpg" /></a>
     </div>
   </div>
 </div>
 
-<div class="section--contact">
-  <div class="row align-left">
-    <h2 class="open-sans-light">Contact Us</h2>
-  </div>
-  <form class="small-12">
-    <div class="row push--40">
-      <div class="columns large-5">
-        <label>Reason for Contact</label>
-        <select id="changeWufooForm">
-  				  <option value="Business Partnerships"> Business Partnerships</option>
-  				  <option value="Request for Quote">Request for Quote</option>
-  				  <option value="Career Opportunities">Career Opportunities</option>
-  				  <option value="Walabot">Walabot</option>
-  				  <option value="Technical Queries">Technical Queries</option>
-  				  <option value="Press">Press</option>
-  				  <option value="Suppliers">Suppliers</option>
-  				  <option value="Investment">Investment</option>
-  				  <option value="Other">Other</option>
-  			</select>
+{{>contact-form}}
 
-        <label>Your Name</label>
-        <input type="text" />
-
-        <label>Email</label>
-        <input type="email" />
-
-        <label>Company</label>
-        <input type="text" />
-      </div>
-
-      <div class="columns expand">
-        <label>Comments</label>
-        <div class="text-right">
-          <textarea id="Field6" name="Field6"></textarea>
-          <button class="push--50">Send</button>
-        </div>
-      </div>
-    </div>
-  </form>
-</div>
-
-<footer class="main-footer">
-  <div class="row align-justify">
-    <div class="columns large-3">
-      <ul class="footer__ul">
-        <li>
-          Vayyar Imaging Ltd
-        </li>
-        <li>
-          <a target="_blank" href="https://www.google.co.il/maps/place/Avraham+Giron+St+3,+Yehud/@32.0271545,34.8925806,17z/data=!3m1!4b1!4m5!3m4!1s0x151d350f94128bd3:0x794c7ab1787023da!8m2!3d32.0271545!4d34.8947693">
-            11 Altalef Street <br />
-            POB. 325, Yehud  <br />
-            56216, Israel
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="columns large-3">
-      <ul class="footer__ul">
-        <li>
-          Vayyar.com
-        </li>
-        <li><a href="#">Automotive</a></li>
-        <li><a href="#">Robotics</a></li>
-        <li><a href="#">Smart Home</a></li>
-        <li><a href="#">Retail</a></li>
-        <li><a href="#">Technology</a></li>
-        <li><a href="#">Press</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-    <div class="columns large-3">
-      <ul class="footer__ul">
-        <li>
-          Follow Us
-        </li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">YouTube</a></li>
-      </ul>
-    </div>
-    <div class="columns large-3">
-      <ul class="footer__ul">
-        <li>
-          We're Hiring
-        </li>
-        <li><a href="#">Start Application</a></li>
-      </ul>
-    </div>
-  </div>
-</footer>
+{{>site-footer}}
