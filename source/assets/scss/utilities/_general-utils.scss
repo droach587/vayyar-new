@@ -15,3 +15,23 @@
   font-size: 2.5rem;
   @extend .fc--mg;
 }
+
+.small, small{
+  color:$body-font-color !important;
+}
+
+.row:not(.expanded){
+  @media screen and (max-width: 1300px){
+    max-width: 1100px;
+  }
+  @media screen and (max-width: 1200px){
+    max-width: 1000px;
+  }
+  @media screen and (max-width: 1000px){
+    max-width: 900px;
+  }
+}
+
+// div, span, section{
+//   border: 1px solid red;
+// }

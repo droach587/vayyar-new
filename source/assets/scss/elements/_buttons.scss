@@ -10,4 +10,12 @@
       color: white;
     }
   }
+  &--inv{
+    background: white;
+    color: #2abaf1;
+    &:hover{
+      background: darken(#2abaf1, 30%);
+      color: white;
+    }
+  }
 }

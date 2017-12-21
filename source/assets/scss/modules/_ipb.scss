@@ -1,0 +1,29 @@
+.ipb{
+  position: fixed;
+  top:85px;
+  left:0;
+  width: 100%;
+  z-index: 10;
+  border-top: 1px solid #bbb;
+  box-shadow: inset 0px 10px 10px #333;
+  visibility: hidden;
+  &.isActive{
+    visibility: visible;
+  }
+  &__banner{
+    padding: 1rem 2rem;
+    background: rgba(#00aeef,.8);
+    h1, h2, h3, h4, h5, h6, p { color: white; margin-bottom: 0}
+  }
+  .pad-col{
+    margin-left: 1rem;
+  }
+  .brow{
+    font-size: 60%;
+    vertical-align: middle;
+    padding: .1rem .4rem;
+    background: rgba(white,.9);
+    color: darken(#00aeef,30%);
+    margin-left: .5rem;
+  }
+}

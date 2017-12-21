@@ -18,13 +18,15 @@
   &--trans{
     background-color: transparent;
   }
-  &--angle{
-    background: url('/assets/images/section-angle.jpg') center 400px no-repeat;
-    background-size: 100% auto;
-  }
-  &--angle-purple{
-    background: url('/assets/images/section-angle-purple.jpg') center top no-repeat;
-    background-size: 100% auto;
+  @include breakpoint (medium up){
+    &--angle{
+      background: url('/assets/images/section-angle.jpg') center -800px no-repeat;
+      background-size: 100% auto;
+    }
+    &--angle-purple{
+      background: url('/assets/images/section-angle-purple.jpg') center top no-repeat;
+      background-size: 100% auto;
+    }
   }
 }
 
@@ -37,7 +39,10 @@
 }
 
 .section--contact{
-  @extend .section--padded;
+  @extend .section;
   background: white url('/assets/images/contact-bg.svg') top center no-repeat;
   background-size: cover;
+  @include breakpoint(large up){
+    padding-bottom: 130px;
+  }
 }

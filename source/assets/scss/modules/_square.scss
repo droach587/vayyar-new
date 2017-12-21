@@ -1,18 +1,22 @@
 .square{
   background: #f8f8f8;
-  padding: 3rem;
-  margin: 0 .5rem;
+  padding: 1.5rem;
+  @include breakpoint(medium up){
+    margin: 0 .5rem;
+    padding: 1.5rem;
+  }
   min-height: 225px;
+  background-size: cover;
+  background-position: center center;
+  box-sizing: border-box;
   &--link{
-    color: #262626;
-    transition-duration: .5s;
-    transition-property: all;
     h3{
       transition-property: all;
       transition-duration: .1s;
+      color: white;
+      text-shadow: 0px 2px 8px #333;
     }
     &:hover{
-      background: lighten(#2abaf1,30%);
       h3{ transform: translateY(-20px); }
     }
   }

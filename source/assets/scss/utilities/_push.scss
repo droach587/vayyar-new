@@ -1,31 +1,10 @@
 $push-slug: push !default;
 
-@for $i from 0 through 20 {
-
-    /*
-    * Commenting for now, keeps large  or default from applying if these classes are also applied
-    */
-    // .#{$push-slug}--small-#{$i+'0'},
-    // .#{$push-slug}--medium-#{$i+'0'}{
-    //     margin-top: 0;
-    // }
-
-    .#{$push-slug}--#{$i+'0'},
-    .#{$push-slug}--large-#{$i+'0'}{
-        margin-top: #{($i+'0')+'px'};
-    }
-
-    .push--large-clear{
-      margin-top: 0px;
-    }
-}
-
-
 @include breakpoint(small down){
 
 	@for $i from 1 through 20 {
 
-	    .#{$push-slug}--small-#{$i+'0'}{
+	    .#{$push-slug}--#{$i+'0'}{
 	    	margin-top: #{($i+'0')+'px'};
 	    }
 	}
@@ -35,7 +14,8 @@ $push-slug: push !default;
   }
 }
 
-@include breakpoint(large down){
+
+@include breakpoint(medium up){
 
 	@for $i from 1 through 20 {
 
@@ -45,6 +25,34 @@ $push-slug: push !default;
 	}
 
 	.push--medium-clear{
+    margin-top: 0px;
+  }
+}
+
+@include breakpoint(large up){
+
+	@for $i from 1 through 20 {
+
+	    .#{$push-slug}--large-#{$i+'0'}{
+	    	margin-top: #{($i+'0')+'px'};
+	    }
+	}
+
+	.push--large-clear{
+    margin-top: 0px;
+  }
+}
+
+@include breakpoint(xlarge up){
+
+	@for $i from 1 through 20 {
+
+	    .#{$push-slug}--xlarge-#{$i+'0'}{
+	    	margin-top: #{($i+'0')+'px'};
+	    }
+	}
+
+	.push--xlarge-clear{
     margin-top: 0px;
   }
 }
