@@ -10,6 +10,10 @@
     background: white url('/assets/images/vayyar-chip-hero.jpg') right center no-repeat;
     padding-bottom: 0;
   }
+  @include breakpoint(xlarge up){
+    background: white url('/assets/images/vayyar-chip-hero.jpg') 70% center no-repeat;
+    padding-bottom: 0;
+  }
   background-size: cover;
   > .row{
     box-sizing: border-box;
